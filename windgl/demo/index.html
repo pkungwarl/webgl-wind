@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>WebGL wind simulation</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<script src="https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.js"></script>
+<link href="https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css" rel="stylesheet" />
+<style>
+     body {
+   margin: 0;
+   padding: 0;
+ }
+
+ #map {
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   width: 100%;
+   border: solid 1px #000000;
+ }
+
+</style>
+</head>
+<style>
+body { margin: 0; padding: 0; }
+</style>
+<body>
+    <canvas id="canvas" style="display: none;"></canvas>
+    <div id="map"></div>
+<!-- <canvas id="coastline"></canvas> -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.6.2/dat.gui.min.js"></script>
+<script src="../dist/wind-gl.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
